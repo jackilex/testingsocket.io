@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>messaging</title>
+    <link
+    rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+</head>
+<body>
+
+
+<div id="main" class="d-flex ">
+    <div id="sideBar" class="d-flex col col-3">
+        <div class="flex-row">
+            <h2 >Who is online</h2>
+            <div id="online"></div>
+            <!-- <button class="redDot" name="Alex" id="thisUser">Alex</button>
+            <button name="Christ" class="redDot" id="thisUser">Christ</button>
+            <button name="Paul" class="redDot" id="thisUser">Paul</button> -->
+            <div>
+                <input id="from" type="text" value="Alex" placeholder="From">
+                <button id="sendName">Enter Name</button>
+            </div>
+        </div>
+
+    </div>
+<div id="container" class="d-flex col col-9 justify-content-center">
+    <div id="messageBar" class="col col-12">
+    <div id="instant-dm" class="d-flex flex-column ">
+        <div id="incoming">
+            <!-- <p id="dm">incoming message</p>
+            <p id="dmOt">outgoing message</p> -->
+
+        </div>
+    </div>
+    <div id="keypad" class="d-flex  flex-row align-self-center input-group input-group-lg">
+        <input id="message" class="col col-10" type="text" maxlength="70" placeholder="Enter message">
+        <button id="send" class="col-auto btn btn-info">Send</button>
+    </div>
+</div>
+
+</div>
+
+</div>
+    
+
+
+    <script src="dm.js"></script>
+</body>
+</html>
